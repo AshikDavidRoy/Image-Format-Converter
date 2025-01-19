@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Image Format Converter</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Image Format Converter</h1>
+
+    <!-- File Upload -->
+    <label for="file-upload" class="custom-file-upload"><input type="file" id="file-upload" accept="image/*"></label>
+    <!-- <input type="file" id="file-upload" accept="image/*"> -->
+
+    <!-- Drag-and-Drop Zone -->
+    <div class="drop-zone" id="drop-zone">
+      <p>Drag and drop your image file here</p>
+    </div>
+
+    <!-- Output Format Selection -->
+    <label for="output-format">Select Output Format:</label>
+    <select id="output-format">
+      <option value="image/png">PNG</option>
+      <option value="image/jpeg">JPEG</option>
+      <option value="image/webp">WEBP</option>
+      <option value="image/bmp">BMP</option>
+      <option value="image/gif">GIF</option>
+      <option value="image/tiff">TIFF</option>
+    </select>
+
+    <!-- Download Button -->
+    <button id="download-btn" class="hidden">Download Converted Image</button>
+
+    <!-- Preview -->
+    <div class="preview hidden">
+      <h3>Preview:</h3>
+      <img id="image-preview" src="" alt="Converted Image Preview">
+    </div>
+  </div>
+
+  <div class="hamburger-menu" onclick="toggleSlider()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="sample-slider hidden" id="sample-slider">
+    <h3>Sample Images</h3>
+    <div id="slider">
+      <!-- Add sample images here -->
+    </div>
+  </div>
+  
+
+  <!-- Sample Images Slider
+  <div class="sample-slider">
+    <h3>Sample Images</h3>
+    <div id="slider">
+ Sample images dynamically loaded here -->
+    </div>
+  </div> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/heic2any/dist/heic2any.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
