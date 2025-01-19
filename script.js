@@ -5,7 +5,7 @@ const totalBackgrounds = 7; // Total number of background GIFs
 // Background Transition
 setInterval(() => {
   currentBackgroundIndex = (currentBackgroundIndex % totalBackgrounds) + 1;
-  document.body.style.backgroundImage = `url('/img-convert/img/${currentBackgroundIndex}.gif')`;
+  document.body.style.backgroundImage = `url('/img/${currentBackgroundIndex}.gif')`;
 }, 5000); // Change every 5 seconds
 
 // Load Sample Images
@@ -13,7 +13,7 @@ const slider = document.getElementById('slider');
 const sampleImages = ['1.jpeg', '4.png', '2.jpeg','3.jpeg','5.jpeg','6.jpeg']; // Example
 sampleImages.forEach((image) => {
   const img = document.createElement('img');
-  img.src = `/img-convert/sampleimg/${image}`;
+  img.src = `/sampleimg/${image}`;
   img.draggable = true;
   img.ondragstart = (event) => {
     event.dataTransfer.setData('image', img.src);
