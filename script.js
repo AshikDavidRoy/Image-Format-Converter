@@ -13,7 +13,7 @@ const slider = document.getElementById('slider');
 const sampleImages = ['1.jpeg', '4.png', '2.jpeg','3.jpeg','5.jpeg','6.jpeg']; // Example
 sampleImages.forEach((image) => {
   const img = document.createElement('img');
-  img.src = `/img-convert/sampleimg/${image}`;
+  img.src = `sampleimg/${image}`;
   img.draggable = true;
   img.ondragstart = (event) => {
     event.dataTransfer.setData('image', img.src);
