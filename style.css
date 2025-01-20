@@ -7,9 +7,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url(img/1.gif) center / cover no-repeat fixed;
+    background: url(img/2.gif) center / cover no-repeat fixed;
     color: #fff;
-    transition: background 1s ease-in-out;
+    /*  transition: background 1s ease-in-out;*/
     overflow: hidden;
   }
   
