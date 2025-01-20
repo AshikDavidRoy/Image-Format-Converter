@@ -9,17 +9,17 @@ const totalBackgrounds = 7; // Total number of background GIFs
 //}, 5000); // Change every 5 seconds
 
 // Load Sample Images
-//const slider = document.getElementById('slider');
-//const sampleImages = ['1.jpeg', '4.png', '2.jpeg','3.jpeg','5.jpeg','6.jpeg']; // Example
-//sampleImages.forEach((image) => {
-  //const img = document.createElement('img');
-  //img.src = `sampleimg/${image}`;
-  //img.draggable = true;
-  //img.ondragstart = (event) => {
-    //event.dataTransfer.setData('image', img.src);
-  //};//
-  //slider.appendChild(img);
-//});
+const slider = document.getElementById('slider');
+const sampleImages = ['1.jpeg', '4.png', '2.jpeg','3.jpeg','5.jpeg','6.jpeg']; // Example
+sampleImages.forEach((image) => {
+  const img = document.createElement('img');
+  img.src = `sampleimg/${image}`;
+  img.draggable = true;
+  img.ondragstart = (event) => {
+    event.dataTransfer.setData('image', img.src);
+  };//
+  slider.appendChild(img);
+});
 
 // File Conversion Logic
 function handleFile(file) {
